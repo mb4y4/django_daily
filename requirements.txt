@@ -1,0 +1,16 @@
+asgiref==3.7.2
+beautifulsoup4==4.12.2
+certifi==2023.11.17
+cloudinary==1.36.0
+dj-database-url==2.1.0
+Django==4.2.7
+django-bootstrap4==23.2
+gunicorn==21.2.0
+packaging==23.2
+psycopg2-binary==2.9.9
+python-decouple==3.8
+six==1.16.0
+soupsieve==2.5
+sqlparse==0.4.4
+typing-extensions==4.8.0
+urllib3==2.1.0

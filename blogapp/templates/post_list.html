@@ -1,0 +1,28 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container">
+   <h1>Post List</h1>
+
+   <div class="row">
+      {% for post in posts %}
+   
+      <div class="col-md-6">
+         <h2><a href=""></a>{{post.title}}</h2>
+
+   <img src="{{post.post_image.url}}" alt="post image" width="300">
+    <p>{{post.content}}</p>
+    <p>Category: {{post.category}}</p>
+    <p>Author: {{post.author}}</p>
+    <p>Date Posted: {{post.created_at}}</p>
+    <a href="{% url 'edit_post' slug=post.slug %}">Edit Post</a>
+      </div>
+      {% endfor %}
+   </div>
+
+   
+</div>
+
+{% endblock %}
